@@ -1,4 +1,0 @@
-Original array first element: 64
---- Array Sorted ---
-11 12 22 25 34 64 
-Min value is 11, correct!

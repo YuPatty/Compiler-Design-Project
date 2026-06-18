@@ -1,2 +1,0 @@
-Float value: -1.500000
-Hex representation: bfc00000

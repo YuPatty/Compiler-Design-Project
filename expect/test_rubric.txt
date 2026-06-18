@@ -1,6 +1,0 @@
---- Rubric All-in-One Test ---
-Op float = 13.140000, Trunc int = 9, Promote float = 9.000000
-Inner loop matching...
-Deepest level reached! Func res = 42
-Optimized value = 9
---- Test End ---

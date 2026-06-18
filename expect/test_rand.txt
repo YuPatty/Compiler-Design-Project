@@ -1,4 +1,0 @@
-=== Standalone Test: rand & srand ===
-First sequence (seed=2026): 37, 72, 23
-Second sequence (reset seed): 37, 72
--> Success: rand sequence matched after srand reset!

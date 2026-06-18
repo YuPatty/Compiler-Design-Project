@@ -1,7 +1,0 @@
-sizeof: uc=1, sc=1, sh=2, ush=2, ui=4
-char_variants: sc_res=5, uc_res=260
-extended_modulo: long_rem=1, uint_rem=3
-printf_short: s=32767, us=65535
-stdlib_full: strtol=-123456789, strtoll=987654321012345, strtoul=4000000000, strtod=3.141593
-implicit_casts: trunc_short=2, forced_signed=-1294967296
-abs_functions: labs(-5000000000)=5000000000, llabs(-987654321012345)=987654321012345

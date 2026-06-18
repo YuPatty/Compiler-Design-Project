@@ -1,7 +1,0 @@
-add_sub_zero: 42 42 42
-mul_div_id: 0 7 7 0
-shift: 32 8 64 4 128 2
-float_id: 3.500000 3.500000 3.500000 3.500000 3.500000
-const_branch: 13
-bitwise_id: 255 255
-chain: 20

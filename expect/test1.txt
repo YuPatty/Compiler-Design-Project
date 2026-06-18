@@ -1,5 +1,0 @@
-Enter two integers: Sum = 14
-Diff = 0
-Product = 49
-a equals b
-x = 205

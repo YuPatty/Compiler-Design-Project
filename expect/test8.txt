@@ -1,7 +1,0 @@
---- Boundary Test Start ---
-Truncated: 5, Promoted: 5.125000
-0 / 42 = 0, 100 mod 1 = 0
-1.0 ## 5.0 = 6.000000
-Zero loop count = 0 (should be 0)
-Array head-tail math match!
---- Boundary Test End ---

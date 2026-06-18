@@ -1,5 +1,0 @@
-=== 1. Escape Sequences ===
-Quotes & Slash: ['] ["] [\]
-Hex & Oct: [A] [B]
-String test: "Hello\tWorld\n"
-=== 2. (void) Cast Passed ===

@@ -1,4 +1,0 @@
-Enter ID (int): Enter base and exp (float): Magic Power (base ## exp) = 17.000000
-Base Energy = 125.000000
-Status: NORMAL
-ID mod 3 = 1

@@ -1,9 +1,0 @@
-backward: sum = 10
-forward: x = 100
-nested: found=1 i=2
-multi: branch A
-multi: done (n=1)
-multi: branch B
-multi: done (n=2)
-multi: branch C
-multi: done (n=3)

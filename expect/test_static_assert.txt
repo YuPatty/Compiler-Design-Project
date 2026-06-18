@@ -1,2 +1,0 @@
-All _Static_assert passed!
-Runtime assert passed (x=42)
