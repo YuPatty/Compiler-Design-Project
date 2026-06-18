@@ -1,0 +1,40 @@
+=== fwrite/fread/fseek/ftell/rewind ===
+fwrite: wrote 5 items (預期 5)
+fread: read 5 items (預期 5)
+buf[0]=10 buf[4]=50 (預期 10 50)
+ftell after fread: 20 (預期 20)
+ftell after rewind: 0 (預期 0)
+fseek to byte 8, read: 30 (預期 30)
+remove 完成
+
+=== ferror/strerror/perror/rename/remove ===
+strerror(2) = No such file or directory
+ferror on good file: 0 (預期 0)
+rename result: 0 (預期 0)
+renamed file opened OK
+remove result: 0 (預期 0)
+perror 完成
+
+=== strdup ===
+strdup: Hello, World!
+strcmp: 0 (預期 0)
+same ptr: 0 (預期 0, 不同位址)
+free(dup) 完成
+
+=== # stringification / ## concatenation ===
+STRINGIFY(hello) = hello (預期 hello)
+STRINGIFY(42) = 42 (預期 42)
+CONCAT(my_,val) = 999 (預期 999)
+MAKE_VAR(score) = 100 (預期 100)
+
+=== getc/fputc/ungetc ===
+getc: A B C (預期 A B C)
+ungetc then getc: C (預期 C)
+char I/O 完成
+
+=== %p / %zu format ===
+pointer %p: 0x7fff5cf8cb94 (非 null 即可)
+size %zu: 10 (預期 10)
+null ptr %p: (nil)
+
+=== 所有測試完成 ===

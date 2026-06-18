@@ -1,0 +1,77 @@
+--- 1. Custom functions & recursion ---
+add(3,7) = 10
+multiply(2,3,4) = 24
+circle_area(5.0) = 78.539749
+factorial(0) = 1
+factorial(1) = 1
+factorial(5) = 120
+factorial(10) = 3628800
+fibonacci(0) = 0
+fibonacci(1) = 1
+fibonacci(7) = 13
+fibonacci(10) = 55
+--- 2. Prototype ---
+add prototype: 30
+factorial prototype: 720
+avg3 prototype: 2.000000
+--- 3. char promotion ---
+char_sum('A','a') = 162
+char_to_int('A') = 65
+char_to_int('0') = 48
+char_to_int('z') = 122
+'a'-'A' = 32
+--- 4. float->double varargs ---
+float 3.14 via %f: 3.140000
+float 1.5e2 via %f: 150.000000
+float -0.001 via %f: -0.001000
+avg3(1.0,2.0,3.0) = 2.000000
+avg3(0.1,0.2,0.3) = 0.200000
+--- 5. string functions ---
+strlen(Hello) = 5
+strlen(World) = 5
+strcpy: Hello
+strcat: Hello World
+strcmp(Hello,Hello) = 0
+strcmp(Hello,World)<0: 1
+strcmp(World,Hello)>0: 1
+--- 6. atoi / atof ---
+atoi(42) = 42
+atoi(-100) = -100
+atoi(0) = 0
+atof(3.14) = 3.140000
+atof(2.718) = 2.718000
+atof(0.0) = 0.000000
+--- 7. math functions ---
+sqrt(4.0) = 2.000000
+sqrt(2.0) = 1.414214
+pow(2,10) = 1024.000000
+pow(3,3) = 27.000000
+fabs(-3.14) = 3.140000
+fabs(2.718) = 2.718000
+floor(3.9) = 3.000000
+floor(-3.1) = -4.000000
+ceil(3.1) = 4.000000
+ceil(-3.9) = -3.000000
+log(1.0) = 0.000000
+--- 8. abs / fmod ---
+abs(-7) = 7
+abs(0) = 0
+abs(5) = 5
+fmod(10,3) = 1.000000
+fmod(7.5,2.5) = 0.000000
+fmod(-5,2) = -1.000000
+--- 9. putchar ---
+Hello
+ABCDE
+--- 10. sprintf / snprintf ---
+int=42
+float=3.140000
+both: 42 and 3.140000
+written=8 result=1234567
+hello 99
+--- 11. scanf %s ---
+Enter word: Got: hello
+len=5
+--- 12. void return ---
+do_nothing() returned
+==========

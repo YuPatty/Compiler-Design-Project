@@ -1,0 +1,6 @@
+isEven(4)=1
+isOdd(3)=1
+Point=(3,7)
+first=55
+redefFunc=11
+1 2 3

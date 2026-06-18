@@ -1,0 +1,33 @@
+=== Loop Unrolling ===
+sum(0..3) = 6
+5! = 120
+even sum = 20
+big loop = 200
+ne sum = 10
+
+=== Flexible Array Member ===
+pkt->len = 5
+pkt->data = Hello
+ia total = 100
+
+=== setjmp / longjmp ===
+may_fail(5) ok
+after may_fail(5)
+caught longjmp, r2=1
+
+=== stdio ===
+puts: hello world
+before fflush
+fflush(stdout) = 0
+
+=== stdlib ===
+aligned buf[0]=42 buf[1]=100
+aligned=1
+_Exit defined (not called)
+
+=== string ===
+tok[0]="apple"
+tok[1]="banana"
+tok[2]=""
+tok[3]="cherry"
+asprintf len=12 str=pi=3.14 n=42

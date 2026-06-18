@@ -1,0 +1,20 @@
+=== argc / argv ===
+argc = 1
+argv[0] = ./test_argc_funcptr
+=== FP: declare & init ===
+fp=add: fp(10,3) = 13
+=== FP: reassign ===
+fp=sub: fp(10,3) = 7
+fp=mul: fp(10,3) = 30
+fp=max2: fp(10,3) = 10
+=== FP: as argument ===
+apply(add,6,7) = 13
+apply(mul,6,7) = 42
+apply(sub,9,4) = 5
+=== FP: dispatch ===
+dispatch(0,4,5) = 9
+dispatch(1,4,5) = -1
+dispatch(2,4,5) = 20
+=== FP: declare then assign ===
+g=add: g(100,200) = 300
+g=sub: g(100,200) = -100

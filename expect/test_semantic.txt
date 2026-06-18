@@ -1,0 +1,14 @@
+Error! 18: Redeclared identifier a.
+Error! 23: Undeclared identifier 'b'.
+Error! 24: Undeclared identifier b.
+Error! 39: No field 'fake_field' in struct Node.
+Error! 42: 'not_a_ptr' is not a pointer, cannot use '->'.
+Error! 46: No field 'wrong' in struct Node.
+Error! 51: function multiply expects 2 args, got 1.
+Error! 52: function multiply expects 2 args, got 3.
+Error! 63: strcpy() takes 2 arguments.
+Error! 64: free() expects a pointer argument.
+clang myRuntime.c test_semantic.ll -o test_semantic -Wno-override-module -lm
+[Output of test_semantic]
+=== Starting Semantic Analysis Test ===
+Segmentation fault (core dumped)
