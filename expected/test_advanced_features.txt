@@ -1,0 +1,15 @@
+--- Advanced Features Test Start ---
+1. Constant Folding: int=86400, float=6.280000, mod=2
+2. Array Init: arr[0]=10, arr[1]=20, arr[2]=30
+   Float Array Init: f_arr[0]=5.000000, f_arr[1]=10.000000
+3. String Array Init: Hello
+4. Ternary Max: 20
+   Mixed Ternary: 3.140000
+5. Char Promotion: 'A' + 5 = 70
+6. Implicit Type Conversion:
+   float fi = 5  → 5.000000
+   int it = 3.99f → 3
+   double di = 7 → 7.000000
+   1.5f + 3 = 4.500000
+   2.5 + 4 = 6.500000
+--- Advanced Features Test End ---

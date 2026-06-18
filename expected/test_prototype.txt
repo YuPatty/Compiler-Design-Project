@@ -1,0 +1,7 @@
+=== Prototype Test ===
+add(3,4) = 7
+circle_area(5.0) = 78.539749
+*** Banner line 1 ***
+*** Banner line 2 ***
+*** Banner line 3 ***
+fib(10) = 55

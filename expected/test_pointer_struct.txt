@@ -1,0 +1,8 @@
+=== Testing malloc and arrow operator (->) ===
+Head node data: 100
+Second node data: 200
+=== Multi-level pointer ** ===
+pp->data via **: 100
+**ppx = 42
+after **ppx=99, x = 99
+=== Memory freed successfully! ===

@@ -1,0 +1,3 @@
+result = 5000
+sum = 1050
+total = 385

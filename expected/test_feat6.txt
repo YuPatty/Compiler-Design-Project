@@ -1,0 +1,26 @@
+=== for-init ===
+sum(0..4) = 10
+i after for = 99
+=== multi-var ===
+a=1 b=2 c=3
+fx=1.500000 fy=2.500000
+=== sizeof ===
+sizeof(int)    = 4
+sizeof(float)  = 4
+sizeof(double) = 8
+sizeof(char)   = 1
+sizeof(a)      = 4
+=== enum ===
+NORTH=0 SOUTH=1
+EAST=2  WEST=3
+OK=200 NOT_FOUND=404 ERROR=500
+Going EAST
+=== string ===
+strcat: Hello World
+strcmp same: 0
+=== math ===
+sqrt(16) = 4.000000
+pow(2,10) = 1024.000000
+fabs(-3.14) = 3.140000
+floor(3.7) = 3.000000
+ceil(3.2) = 4.000000

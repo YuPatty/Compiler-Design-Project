@@ -1,0 +1,75 @@
+=== while ===
+1
+2
+3
+4
+5
+ok
+=== do-while ===
+1
+2
+3
+99
+=== for ===
+55
+3
+2
+1
+ok
+=== nested mixed ===
+1
+2
+3
+2
+4
+6
+3
+6
+9
+10
+8
+=== switch-case ===
+two
+nine
+zero
+one
+two
+many
+div2
+=== break ===
+0
+1
+2
+3
+4
+after 5
+0
+1
+2
+after 3
+00
+10
+20
+0
+1
+after 2
+=== continue ===
+1
+3
+5
+7
+1
+2
+4
+5
+7
+8
+00
+01
+03
+10
+11
+13
+20
+21
+23

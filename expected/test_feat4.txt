@@ -1,0 +1,9 @@
+MAX_SIZE = 100
+PI = 3.141590
+matrix[0][0] = 0
+matrix[1][2] = 6
+matrix[2][3] = 11
+Hi
+Enter a char: You entered ASCII: 65
+strlen(src) = 5
+strcpy dst = Hello

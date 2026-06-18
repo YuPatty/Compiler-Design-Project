@@ -1,0 +1,21 @@
+=== 1. typedef ===
+MyInt a = 42
+Real r = 3.140000
+=== 1b. typedef struct ===
+Point p.x = 10
+Point p.y = 20
+=== 2. Scientific Notation ===
+1.5e2  = 150.000000
+2.0E-1 = 0.200000
+1e3    = 1000.000000
+3.0e0  = 3.000000
+1.0e2 + 2.5e1 = 125.000000
+=== 3. #define ===
+VERSION = 2
+PI = 3.141590
+MAX_SIZE = 100
+=== 4. Conditional Compilation ===
+DEBUG is defined
+RELEASE is not defined
+VERSION macro exists
+UNDEFINED_MACRO not defined (correct)

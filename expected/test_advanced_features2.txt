@@ -1,0 +1,69 @@
+=== qsort / bsearch ===
+sorted ints: 10 20 30 40 50 60 70 90
+bsearch(30) found: 30
+bsearch(55) NOT found
+bsearch(10) found: 10
+bsearch(90) found: 90
+sorted doubles: 0.57 1.41 1.73 2.71 3.14
+single-element qsort: 42
+re-sorted: 1 2 3 4
+reverse-sorted: 1 2 3 4 5
+
+=== time.h ===
+mktime(localtime(t1)) == t1 : OK
+epoch gmtime: year=1970 mon=1 mday=1 hour=0 min=0 sec=0
+epoch+1day: year=1970 mon=1 mday=2
+mktime(2024-06-15 12:00:00 local) > 0 : OK  (t=1718424000)
+mktime round-trip: OK
+strftime epoch UTC : 1970-01-01 00:00:00  (n=19)
+strftime weekday   : Thursday
+strftime truncated (n=0): OK
+difftime(1500, 1000) = 500.0
+difftime(1000, 1500) = -500.0
+difftime(t, t)       = 0.0
+
+=== lround / llround / nearbyint ===
+--- lround ---
+lround(2.3)  = 2
+lround(2.5)  = 3
+lround(2.7)  = 3
+lround(-2.3) = -2
+lround(-2.5) = -3
+lround(-2.7) = -3
+lround(0.0)  = 0
+lround(0.5)  = 1
+lround(-0.5) = -1
+lround(100.9)= 101
+--- llround ---
+llround(2.3)  = 2
+llround(2.5)  = 3
+llround(-2.5) = -3
+llround(1e9)  = 1000000000
+llround(3e15) = 3000000000000000
+--- nearbyint ---
+nearbyint(2.0)  = 2.0
+nearbyint(2.3)  = 2.0
+nearbyint(2.7)  = 3.0
+nearbyint(2.5)  = 2.0
+nearbyint(3.5)  = 4.0
+nearbyint(-2.5) = -2.0
+nearbyint(-3.5) = -4.0
+nearbyint(0.0)  = 0.0
+nearbyint(-0.0) = -0.0
+--- 0.5 comparison ---
+lround(0.5)      = 1
+nearbyint(0.5)   = 0.0
+lround(1.5)      = 2
+nearbyint(1.5)   = 2.0
+lround(-0.5)     = -1
+nearbyint(-0.5)  = -0.0
+--- round vs lround ---
+round(2.5)  = 3.0   lround(2.5)  = 3
+round(-2.5) = -3.0  lround(-2.5) = -3
+--- integer input ---
+lround(int 7)     = 7
+llround(int 7)    = 7
+nearbyint(int 7)  = 7.0
+lround(-9.99)     = -10
+llround(-9.99)    = -10
+nearbyint(-9.99)  = -10.0

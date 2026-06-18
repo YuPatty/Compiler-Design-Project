@@ -1,0 +1,14 @@
+Hello from void function!
+positive
+negative
+zero
+Enter your name: Hello, yu!
+Enter city: Enter age: nyc is 2 years old.
+DCE: if(1) branch taken
+DCE: if(0) else branch taken
+DCE: constant condition works
+loop i=0
+loop i=1
+loop i=2
+loop i=4
+loop i=5

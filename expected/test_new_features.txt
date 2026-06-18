@@ -1,0 +1,22 @@
+Test1 max(10,20)     = 20
+Test2 wrong_min      = 20
+Test3 min(10,20)     = 10
+Test4 ternary+arith  = 21
+Test5 nested ternary = 20
+Test6 fmax(3.14,2.71)= 3.140000
+Test7 int->float mix = 3.140000
+Test8  arr[0]=10
+Test9  arr[2]=30
+Test10 arr[4]=50
+Test11 arr[1]=99     = 99
+Test12 farr[0]       = 1.100000
+Test13 farr[1]       = 2.200000
+Test14 farr[2]       = 3.300000
+Test15 arr sum       = 229
+Test16 24*60*60      = 86400
+Test17 100+200+300   = 600
+Test18 3*4+5*6       = 42
+Test19 2.0*3.0       = 6.000000
+Test20 1000-300-200  = 500
+Test21 144/12        = 12
+Test22 x + 10*2      = 25

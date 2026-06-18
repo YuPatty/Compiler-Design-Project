@@ -1,0 +1,2 @@
+int result = 17
+float result = 4.500000
