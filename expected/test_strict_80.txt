@@ -1,0 +1,8 @@
+--- Strict 80-Point Test Start ---
+b=-10, c=-1, d=0, e=1
+math_res = -7
+f_res = 1.000000, neg_trunc = -4
+Logic branch: TRUE (Correct!)
+Nested flow: CORRECT!
+0.0 ## 1.0 = 1.000000
+--- Strict 80-Point Test End ---

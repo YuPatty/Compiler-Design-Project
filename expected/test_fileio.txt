@@ -1,0 +1,10 @@
+=== Stage 1: Writing with fprintf ===
+Successfully wrote 3 lines via fprintf.
+
+=== Stage 2: Reading with fgets ===
+--- File Content Start ---
+Line 1: Hello from fprintf!
+Line 2: Value = 42
+Line 3: Pi = 3.141590
+--- File Content End ---
+File read and closed successfully.

@@ -1,0 +1,49 @@
+--- 1. String pool dedup ---
+hello
+hello
+hello
+world world world
+test
+test
+fmt=42
+fmt=99
+--- 2. IR Buffer Stack ---
+branch A
+branch A1
+cnt==1
+fsum=6
+--- 3. Terminator Guard ---
+early_return(-5) = -1
+early_return(0) = 0
+early_return(7) = 1
+multi_branch(200) = 3
+multi_branch(75) = 2
+multi_branch(25) = 1
+multi_branch(-1) = 0
+sum_with_break(5) = 10
+sum_skip_even(6) = 9
+--- 4. charPtrTemps ---
+Hello LLVM
+strlen=10
+my_strlen=10
+upper=5
+upper=3
+--- 5. Hex float precision ---
+0.1 = 0.100000
+0.2 = 0.200000
+0.1+0.2 = 0.300000
+3.14159265 = 3.141593
+1/3 = 0.333333
+0.000001 = 0.000001
+1234567.89 = 1234567.875000
+0.1+0.2 > 0.29 OK
+pi > 3.14 OK
+--- 6. ReturnTypeStack ---
+ret_int(5) = 10
+ret_float(2.5) = 3.000000
+ret_double(3.0) = 9.000000
+void got 42
+outer(3) = 6
+nested_float(2,3) = 10.500000
+ret_int(ret_int(3)) = 12
+ret_float(ret_float(1.0)) = 2.000000

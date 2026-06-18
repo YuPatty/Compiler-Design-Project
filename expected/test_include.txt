@@ -1,0 +1,5 @@
+SQUARE(5) = 25
+CUBE(3) = 27
+MAX2(10,20) = 20
+helper_add(7,8) = 15
+factorial(6) = 720

@@ -1,0 +1,11 @@
+a = 43
+b = 84
+linear ret = 127
+r1=100 r2=198
+if ret = 298
+sum(0..4) = 10
+loop ret = 10
+r=10 s=21
+multi ret = 31
+d=55
+call ret = 55

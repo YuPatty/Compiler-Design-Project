@@ -1,0 +1,5 @@
+add(3, 4) = 7
+multiply(6, 7) = 42
+power(2.0, 10) = 1024
+counter after 3 increments = 3
+global_counter direct = 3

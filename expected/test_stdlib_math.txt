@@ -1,0 +1,34 @@
+=== strlen ===
+strlen(Hello) = 5
+=== strcpy ===
+strcpy: Hello
+=== strcat ===
+strcat: Hello World
+=== strcmp ===
+strcmp(s1,s1) = 0
+=== atoi ===
+atoi(42) = 42
+=== abs ===
+abs(-5)  = 5
+abs(5)   = 5
+abs(-99) = 99
+=== sqrt ===
+sqrt(4)  = 2.000000
+sqrt(9)  = 3.000000
+sqrt(2)  = 1.414214
+=== pow ===
+pow(2,8) = 256.000000
+pow(3,3) = 27.000000
+=== fabs ===
+fabs(-3.14) = 3.140000
+=== floor / ceil ===
+floor(3.7) = 3.000000
+ceil(3.2)  = 4.000000
+floor(-1.3)= -2.000000
+=== fmod ===
+fmod(7.5, 2.0) = 1.500000
+fmod(10.0,3.0) = 1.000000
+=== sprintf ===
+sprintf result: x=42 pi=3.140000
+=== putchar ===
+Hi!

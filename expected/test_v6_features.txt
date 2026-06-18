@@ -1,0 +1,42 @@
+=== static local ===
+counter: 1
+counter: 2
+counter: 3
+accum(10): 10
+accum(20): 30
+accum(5):  35
+
+=== switch fall-through ===
+case1
+case2
+case3
+B-case2
+C-case3
+C-default
+D-default
+
+=== 2D array param ===
+ 0  1  2  3 
+ 4  5  6  7 
+ 8  9 10 11 
+row0 sum = 6
+row1 sum = 22
+row2 sum = 38
+
+=== __attribute__ ===
+add(10,20) = 30
+unused_var = 42
+
+=== memmove / memchr / strspn / strcspn / strpbrk ===
+memmove: Hello, Hello
+memmove dst: ABCDE
+memchr found 'X' at index: 9
+memchr 'Z': NULL
+strspn("aabbccXYZ","abc") = 6
+strspn("123hello",digits) = 3
+strcspn("hello world"," ") = 5
+strcspn("abcXYZ123","XYZ") = 3
+strpbrk vowel: 'e' at 1
+strpbrk punct: NULL
+
+=== 全部完成 ===
