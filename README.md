@@ -1,8 +1,8 @@
 # myCompiler — C Subset to LLVM IR Compiler
 
-> 一個用 **ANTLR4 + Java** 從零實作的 C 語言子集編譯器,將 `.c` 原始碼編譯成 **LLVM IR**,再透過 clang 產生可執行檔。內建語意分析、邊界防護,以及完整的編譯期最佳化流程(常數折疊、CSE、DCE、LICM、全域常數傳播、迴圈展開、尾呼叫優化等),並以 120 組自動化回歸測試驗證正確性。
+> 一個用 **ANTLR4 + Java** 從零實作的 C 語言子集編譯器,將 `.c` 原始碼編譯成 **LLVM IR**,再透過 clang 產生可執行檔。內建語意分析、邊界防護,以及完整的編譯期最佳化流程(常數折疊、CSE、DCE、LICM、全域常數傳播、迴圈展開、尾呼叫優化等),並以多組自動化回歸測試驗證正確性。
 
-A from-scratch C-subset compiler built with ANTLR4 + Java that emits LLVM IR, complete with semantic analysis, bounds checking, and a multi-pass optimization pipeline, verified by 120 automated regression tests.
+A from-scratch C-subset compiler built with ANTLR4 + Java that emits LLVM IR, complete with semantic analysis, bounds checking, and a multi-pass optimization pipeline, verified by many automated regression tests.
 
 ---
 
@@ -19,13 +19,12 @@ A from-scratch C-subset compiler built with ANTLR4 + Java that emits LLVM IR, co
 - [測試](#測試)
 - [專案結構](#專案結構)
 - [已知限制](#已知限制)
-- [開發心得](#開發心得)
 
 ## 專案簡介
 
 `myCompiler` 是一個將 C 語言子集翻譯成 LLVM IR 的編譯器,前端使用 ANTLR 4.13.2 產生 Lexer / Parser,並以 Visitor pattern 在語法樹走訪階段直接產生 IR;後端產生的 `.ll` 檔案可以直接用 `clang` 搭配隨附的 `myRuntime.c` 執行期函式庫編譯、連結並執行。
 
-整個專案除了單純的「翻譯」之外,還實作了完整的**語意分析**(型別檢查、隱式轉換、作用域管理)、**安全防護**(陣列邊界檢查、缺少 return 警告)以及**編譯器後端最佳化**,目標是盡量貼近真實編譯器(如 clang/GCC)的行為,而不只是滿足語法上的對應。
+整個專案除了單純的「翻譯」之外,還實作了**語意分析**(型別檢查、隱式轉換、作用域管理)、**安全防護**(陣列邊界檢查、缺少 return 警告)以及**編譯器後端最佳化**,目標是盡量貼近真實編譯器(如 clang/GCC)的行為,而不只是滿足語法上的對應。
 
 ## 系統架構
 
@@ -58,7 +57,7 @@ flowchart LR
 
 ## 編譯期最佳化
 
-這是這個專案最花心力的部分 —— 不只是把語法翻成 IR,而是實作了一條真正會「思考」的最佳化流程:
+這是這個專案最花心力的部分 —— 不只是把語法翻成 IR,而是實作一條最佳化流程:
 
 | 最佳化 | 說明 |
 |---|---|
@@ -161,6 +160,7 @@ int main() {
 ├── Makefile                # 建置 / 測試 / 回歸比對
 ├── test/                   # 120 組測試 .c 檔與對應 stdin
 ├── expected/                # 各測試的預期輸出
+├── README.pdf             # 編譯執行以及編譯器功能詳細說明
 ├── C_Subset.pdf             # 支援的 C 語言子集規格說明
 └── myCompiler_Organized_Extension_List.pdf  # 擴充功能與對應測試檔案總覽
 ```
@@ -174,8 +174,6 @@ int main() {
 - 全域陣列不支援初始化清單
 
 完整清單請見專案內 `README`(第七節「不支援的功能」)。
-
-## 開發心得
 
 > _(在這裡寫下你在實作過程中遇到的挑戰、怎麼解決,以及學到了什麼 —— 這段對推甄審查最有說服力,建議用自己的話寫,而不是流水帳列功能。例如:為什麼選擇實作 GCP / TCO 這類進階最佳化?除錯時印象最深刻的一個 bug 是什麼?)_
 
