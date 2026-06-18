@@ -1,0 +1,19 @@
+=== Stage 1: Writing data ===
+=== Stage 2: Reading & ctype.h Testing ===
+CASE SWAPPED: lINE 1: a+b=c! @2026
+CASE SWAPPED:   #tEST_2: 	 XYZ
+
+=== Stage 3: Struct Pointer (->) & Results ===
+Total Lines: 2
+Total Chars: 38
+--- ctype.h Stats ---
+Digits: 6
+Alphas (Letters): 14
+Alnums (Letters+Digits): 20
+Spaces (including \n, \t): 10
+Uppers: 5
+Lowers: 9
+Puncts (Symbols): 8
+Prints (Printable): 35
+
+Testing exit(0)...

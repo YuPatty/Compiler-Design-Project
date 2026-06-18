@@ -1,0 +1,10 @@
+=== Pass1: Unreachable Code ===
+120
+7
+4
+=== Pass2: Dead Store ===
+3
+=== Pass3: Dead Assignment ===
+10
+=== while + break dead ===
+found 3

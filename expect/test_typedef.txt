@@ -1,0 +1,13 @@
+=== 基本型別別名 ===
+MyInt: 10 + 20 = 30
+Real: pi*2 = 6.283180
+Byte: 65
+=== typedef struct ===
+Point: (3, 4)
+dist^2 = 25
+=== 多層別名 ===
+arr[0] = 0
+arr[1] = 1
+arr[2] = 4
+arr[3] = 9
+arr[4] = 16

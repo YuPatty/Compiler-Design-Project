@@ -1,0 +1,10 @@
+basic: fp(3,4) = 7
+basic: fp(3,4) = 12
+assign: op(10,3) = 7
+assign: op(10,3) = 13
+higher: apply(add,5,6) = 11
+higher: applyTwice(mul,5,6) = 60
+higher: apply(sub,10,4) = 6
+Hello!
+Goodbye!
+loop: result = 22

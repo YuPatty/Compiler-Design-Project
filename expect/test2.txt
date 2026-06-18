@@ -1,0 +1,12 @@
+odd: 1
+odd: 3
+odd: 5
+odd: 7
+odd: 9
+First multiple of 7: 7
+Grade: B
+Countdown: 5
+Countdown: 4
+Countdown: 3
+Countdown: 2
+Countdown: 1

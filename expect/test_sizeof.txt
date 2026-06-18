@@ -1,0 +1,14 @@
+=== sizeof(type) ===
+sizeof(int)    = 4
+sizeof(float)  = 4
+sizeof(double) = 8
+sizeof(char)   = 1
+=== sizeof(expr) — 根據變數型別決定 ===
+sizeof(i) = 4
+sizeof(f) = 4
+sizeof(c) = 1
+=== sizeof 與常數折疊結合 ===
+sizeof(int)*10 = 40
+sizeof(float)*5 = 20
+=== sizeof 在條件中 ===
+double is larger than int

@@ -1,0 +1,17 @@
+=== DCE ===
+DCE: if(1) OK
+DCE: if(0) else OK
+DCE: constant 1 OK
+=== Short-Circuit ===
+SC: && short-circuit OK
+SC: side_effect called 0 times (should be 0)
+SC: || short-circuit OK
+SC: side_effect called 0 times (should be 0)
+SC: side_effect called 1 times (should be 1)
+=== Strength Reduction ===
+SR: 10 * 2 = 20
+SR: 10 * 4 = 40
+SR: 10 * 8 = 80
+SR: 10 / 2 = 5
+SR: 10 / 4 = 2
+SR: 10 * 3 = 30

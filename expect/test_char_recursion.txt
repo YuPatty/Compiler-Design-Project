@@ -1,0 +1,6 @@
+--- Char & Recursion Test Start ---
+Feature 4 (String Init)     : Compiler Magic!
+Feature 3 (Assign Cast)     : origin=72, back_to_int=72
+Feature 1 & 2 (Math & %c)  : Original='H', Next='I'
+Feature 5 (Recursion)       : factorial(5) = 120
+--- Char & Recursion Test End ---

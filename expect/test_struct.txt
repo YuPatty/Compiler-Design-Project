@@ -1,0 +1,15 @@
+=== struct 基本操作 ===
+p1 = (3, 4)
+dist^2 = 25
+=== struct 成員修改 ===
+p1 modified = (10, 0)
+=== 多個 struct 變數 ===
+r1 area = 15
+r2 area = 32
+r1 perimeter = 16
+r2 perimeter = 24
+=== typedef struct ===
+c1 = 3.0 + 4.0i
+|c1|^2 = 25.000000
+=== struct 成員連算 ===
+big = 13x7 area=91

@@ -1,0 +1,7 @@
+=== Linked List Test ===
+Appending 10, 20, 30...
+List: [10] -> [20] -> [30] -> NULL
+=== Modify 2nd Node ===
+List: [10] -> [99] -> [30] -> NULL
+=== Freeing List ===
+Free OK!

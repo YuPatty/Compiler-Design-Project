@@ -1,0 +1,7 @@
+Wednesday
+Array sum = 150
+Count = 3
+Average = 6.333333
+1 2 3 
+2 4 6 
+3 6 9 

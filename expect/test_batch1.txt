@@ -1,0 +1,42 @@
+=== clearerr ===
+feof before clearerr: 1 (非零)
+feof after  clearerr: 0 (預期 0)
+
+=== tmpfile / tmpnam ===
+tmpfile read: tmp content
+tmpnam: (ok) (非空字串)
+
+=== popen / pclose ===
+popen read: popen_test_ok (預期 popen_test_ok)
+pclose: 0 (預期 0)
+
+=== setvbuf / setbuf ===
+setvbuf(_IONBF) result: 0 (預期 0)
+setbuf: 完成
+
+=== modf / frexp / ldexp / scalbn / ilogb ===
+modf(3.75): frac=0.75 intpart=3.00 (預期 0.75 3.00)
+modf(-2.5): frac=-0.50 intpart=-2.00 (預期 -0.50 -2.00)
+frexp(8.0): mantissa=0.5000 exp=4 (預期 0.5000 4)
+ldexp(0.5, 4) = 8.0 (預期 8.0)
+scalbn(1.0, 10) = 1024.0 (預期 1024.0)
+ilogb(1024.0) = 10 (預期 10)
+
+=== signal / raise ===
+signal_received = 2 (預期 2)
+
+=== vsprintf / vsnprintf ===
+my_printf: 3 + 4 = 7
+my_printf returned: 1 (預期 > 0)
+vsnprintf truncated: Hello,  (預期 Hello, )
+vsnprintf returned:  13 (預期 13, 原始長度)
+
+=== for 多變數宣告 ===
+for(int i=0,j=10;i<5;i++,j--) sum of i+j = 50 (預期 50)
+x sum=6 (預期 6), y sum=210 (預期 210)
+
+=== __builtin_expect ===
+__builtin_expect(true) branch taken (預期)
+__builtin_expect(false) branch skipped (預期)
+
+=== 所有測試完成 ===
