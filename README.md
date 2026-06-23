@@ -104,7 +104,7 @@ make
 # 編譯並執行單一測試(若有對應 .in 檔會自動當作 stdin)
 make run TEST=test1
 
-# 只產生 LLVM IR,不連結執行
+# 只產生 LLVM IR，不連結執行
 make ll TEST=test1
 
 # 跑全部 120 組回歸測試，比對預期輸出，印出 PASS/FAIL
